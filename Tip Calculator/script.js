@@ -6,6 +6,6 @@ let result=document.getElementById("total");
 function Calculate(){
     const bill=bill_amount.value;
     const tip=tip_percentage.value;
-    console.log(bill, tip);
+    const totalValue = bill * (1 + tip / 100);
     result.innerHTML=totalValue.toFixed(2);
 }
