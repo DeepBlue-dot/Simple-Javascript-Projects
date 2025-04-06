@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: rgb(137, 137, 228);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button 
+    {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+section{
+    width: 45vw;
+    height: 55vh;
+    min-height: 350px;
+    min-width: 300px;
+    background-color: whitesmoke;    
+}
+section:hover, section:focus{
+    box-shadow: 0 0 1em ;
+}
+
+@media screen and (max-width: 800px) {
+    section{
+        width: 100vw;
+    }
+    
+}
+
+.title{
+    font-size: 2.5em;
+    text-align: center;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5em;
+}
+.inst{
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0 1em 1em;
+}
+.user_input{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0 1em;
+    gap: 1em;
+    
+}
+.user_input label{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: auto 0;
+}
+.user_input input{
+    max-width: 20%;
+    height: 80%;
+    text-align: center;
+    font-size: 1em;
+    margin: auto 0;
+}
+.user_input input:hover, .user_input input:focus{
+    border: 0.1px solid blue;
+    box-shadow: 0 0 1em rgba(0, 0, 255, 0.581);
+    outline: none;
+}
+.submitte{
+    width: 30%;
+    height: 100%;
+    border-radius: 2em;
+    background-color: rgb(43, 167, 208);
+    border: none;
+    color: white;
+    font-size: 1em;
+}
+.submitte:hover, .submitte:focus{
+    background-color: rgb(58, 206, 255);
+    outline: none;
+}
+.help{
+    height: 10%;
+    text-align: center;
+    color: rgb(99, 166, 99);
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.answer{
+    height: 8%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.restart{
+    height: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restart button{
+    height: 100%;
+    width: 30%;
+}
+
+.restart button:hover{
+    transform: scale(1.1); 
+}
+
+.help, .restart, .answer{
+    display: none;
+}
